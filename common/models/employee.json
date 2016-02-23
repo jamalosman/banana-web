@@ -7,7 +7,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "forename": {
+    "firstname": {
       "type": "string",
       "required": true
     },
@@ -16,8 +16,23 @@
       "required": true
     },
     "email": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "skills": {
+      "type": [
+        "string"
+      ]
+    },
+    "username": {
       "type": "string",
-      "required": true
+      "required": true,
+      "comments": "firstname-lastname"
+    },
+    "image": {
+      "type": "string"
     }
   },
   "validations": [],
