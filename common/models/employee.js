@@ -10,7 +10,12 @@ module.exports = function (Employee) {
         		data.username = (data.firstname+'-'+data.lastname).toLowerCase();
         	}
         	// Custom code here
-            return create.apply(this, arguments);
+            return create.call(this, data, function(err, models){
+                if (err) {
+                    console.log(err);
+                }
+                callback();
+            });
         };
 
     });
