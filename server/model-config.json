@@ -45,5 +45,11 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "cake": {
+    "dataSource": "onboard_postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

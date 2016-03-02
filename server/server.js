@@ -1,6 +1,6 @@
 var loopback = require('loopback');
 var boot = require('loopback-boot');
-
+var ipfilter = require('express-ipfilter');
 var app = module.exports = loopback();
 
 app.start = function() {
@@ -15,6 +15,10 @@ app.start = function() {
     }
   });
 };
+
+// 
+//var ips = ['127.0.0.1','172.16.32.34'];
+//app.use(ipfilter(ips,{mode: 'allow'}));
 
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
