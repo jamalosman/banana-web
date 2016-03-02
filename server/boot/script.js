@@ -6,18 +6,8 @@ module.exports = function (app) {
 
   User.create([
     {
-      username: 'Jamal',
-      email: 'jamal@company.io',
-      password: 'test123'
-  },
-    {
-      username: 'Andrew',
-      email: 'andrew@company.io',
-      password: 'test123'
-  },
-    {
-      username: 'Anita',
-      email: 'anita@company.io',
+      username: 'admin',
+      email: 'ENVER VALID EMAIL',
       password: 'test123'
   }
   ], function (err, users) {
