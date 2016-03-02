@@ -32,21 +32,7 @@
     "dataSource": "db",
     "public": false
   },
-  "company": {
-    "dataSource": "onboard_postgres",
-    "public": true
-  },
-  "contract": {
-    "dataSource": "onboard_postgres",
-    "public": true
-  },
-  "employee": {
-    "dataSource": "onboard_postgres",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
-  },
-  "cake": {
+  "Cake": {
     "dataSource": "onboard_postgres",
     "public": true,
     "$promise": {},

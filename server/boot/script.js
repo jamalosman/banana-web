@@ -3,11 +3,11 @@ module.exports = function (app) {
   var Role = app.models.Role;
   var RoleMapping = app.models.RoleMapping;
 
-
+  // TODO: replace user details
   User.create([
     {
       username: 'admin',
-      email: 'ENVER VALID EMAIL',
+      email: 'some@email.com',
       password: 'test123'
   }
   ], function (err, users) {
@@ -15,7 +15,7 @@ module.exports = function (app) {
 
     //create the superuser role
     Role.create({
-      name: 'superuser'
+      name: 'admin'
     }, function (err, role) {
       if (err) throw err;
 
