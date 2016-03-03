@@ -15,8 +15,32 @@ module.exports = function (Cake) {
       return standardCreate.call(Cake, data, callback);
     };
 
-    //    Cake.calculateDiameter = function () {
-    //      return this.radius * 2;
-    //    };
+    Cake.calculateDiameter = function (id, callback) {
+      var cake = Cake.findById(id, function (err) {
+        if (err) callback(err);
+      });
+      var diameter = cake.radius * 2;
+      console.log('diameter', diameter);
+      callback(null, diameter);
+    };
+
+    Cake.remoteMethod(
+      'diameter', {
+        accepts: {
+          arg: 'id',
+          type: 'number',
+          required: true
+        },
+        returns: {
+          arg: 'diameter',
+          type: 'number'
+        },
+        http: {
+          path: '/:id/diameter',
+          verb: 'get'
+        }
+      }
+    );
+
   });
 };

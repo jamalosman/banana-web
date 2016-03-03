@@ -1,11 +1,11 @@
+var ipfilter = require('express-ipfilter');
 var loopback = require('loopback');
 var boot = require('loopback-boot');
-var ipfilter = require('express-ipfilter');
 var app = module.exports = loopback();
 
-app.start = function() {
+app.start = function () {
   // start the web server
-  return app.listen(function() {
+  return app.listen(function () {
     app.emit('started');
     var baseUrl = app.get('url').replace(/\/$/, '');
     console.log('Web server listening at: %s', baseUrl);
@@ -16,13 +16,15 @@ app.start = function() {
   });
 };
 
-// 
-//var ips = ['127.0.0.1','172.16.32.34'];
-//app.use(ipfilter(ips,{mode: 'allow'}));
+// Whitelist the following IPS to access explorer, any others will be rejected
+var ips = ['127.0.0.1'];
+app.use('/explorer', ipfilter(ips, {
+  mode: 'allow'
+}));
 
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
-boot(app, __dirname, function(err) {
+boot(app, __dirname, function (err) {
   if (err) throw err;
 
   // start the server if `$ node server.js`
