@@ -23,6 +23,7 @@ You will need to set up a database and a node web server to run this project
   - Once you have added a datasource, you can create models and save them in that datasource using the arc interface or with the ``` slc loopback:model ``` command
   - Once you have created the model and added properties then you will need to migrate the to the database, this is done by clicking the 'migrate model' button in arc. There is no commandline tool for this, but it can be done by adding a script to the /server/boot/ directory which will run automatically. [see here](https://docs.strongloop.com/display/public/LB/Implementing+auto-migration) 
   - These models will be exposed through the REST api once the server is running
+  - We've created an example model 'Cake', see common/models/Cake.js for an example of how to override a CRUD method, adding your own code
 
 ###### Configuration
  - Apart fromt the database there is some extra configuration available
