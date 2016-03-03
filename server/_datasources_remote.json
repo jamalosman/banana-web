@@ -1,0 +1,12 @@
+{
+  "onboard_postgres": {
+    "host": "ENTER HOST NAME",
+    "port": ENTER_PORTNUMBER,
+    "database": "ENTER DATABASE NAME",
+    "username": "ENTER USERNAME",
+    "password": "ENTER PASSWORD",
+    "name": "onboard_postgres",
+    "connector": "postgresql",
+    "ssl": "require"
+  }
+}

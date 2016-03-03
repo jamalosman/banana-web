@@ -10,21 +10,4 @@
     "name": "LOCAL_POSTGRESQL_INSTANCE_NAME",
     "connector": "postgresql"
   }
-  /*  
-    #######################
-    Remove the underscore from this file's filename
-    If you want to connect to a remote database, use the template below
-    Then Dete these comments as they are note valid JSON
-    #######################
-    "onboard_postgres": {
-      "host": "ENTER HOST NAME",
-      "port": ENTER_PORTNUMBER,
-      "database": "ENTER DATABASE NAME",
-      "username": "ENTER USERNAME",
-      "password": "ENTER PASSWORD",
-      "name": "onboard_postgres",
-      "connector": "postgresql",
-      "ssl": "require"
-    }
-  */
 }
