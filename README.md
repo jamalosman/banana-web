@@ -38,7 +38,7 @@ You will need to set up a database and a node web server to run this project
     - NOTE: slc arc is free, but requires creating an account with strongloop
   - Once you have created the model and added properties then you will need to migrate the to the database, this is done by clicking the 'migrate model' button in arc. There is no commandline tool for this, but it can be done by adding a script to the /server/boot/ directory which will run automatically. [see here](https://docs.strongloop.com/display/public/LB/Implementing+auto-migration) 
   - These models will be exposed through the REST api once the server is running
-  - We've created an example model called Cake, see common/models/cake.js for an example of how to override a CRUD method, adding your own code
+  - We've created an example model called Cake, see common/models/cake.js for an example of how to override a CRUD method (adding your own code), and adding a custom endpoint
   - use arc to migrate the Cake model to your datasource. (click 'Cake' under 'Models' o the left column, then click the 'Migrate Model' button).
   
   
