@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "onboard_postgres": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "LOCAL_DATABASE_NAME",
+    "name": "LOCAL_POSTGRESQL_INSTANCE_NAME",
+    "connector": "postgresql"
+  }
+}

@@ -8,8 +8,10 @@
     "posttest": "nsp check"
   },
   "dependencies": {
+    "bluebird": "^3.3.1",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
+    "express-ipfilter": "0.0.24",
     "helmet": "^0.14.0",
     "loopback": "^2.22.0",
     "loopback-boot": "^2.6.5",
