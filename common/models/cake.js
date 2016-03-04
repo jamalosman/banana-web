@@ -15,13 +15,12 @@ module.exports = function (Cake) {
       return standardCreate.call(Cake, data, callback);
     };
 
-    Cake.calculateDiameter = function (id, callback) {
-      var cake = Cake.findById(id, function (err) {
+    Cake.diameter = function (id, callback) {
+      var cake = Cake.findById(id, function (err, cake) {
         if (err) callback(err);
+        var diameter = cake.radius * 2;
+        return callback(null,diameter);
       });
-      var diameter = cake.radius * 2;
-      console.log('diameter', diameter);
-      callback(null, diameter);
     };
 
     Cake.remoteMethod(

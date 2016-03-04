@@ -33,7 +33,8 @@
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",
-      "permission": "DENY"
+      "permission": "ALLOW",
+      "note": "Change the permission back to DENY"
     },
     {
       "accessType": "*",
