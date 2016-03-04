@@ -59,7 +59,7 @@ You will need to set up a database and a node web server to run this project
   - you can add more IPs to the whitelist in server/server.js
 
 ##### Configuration
- - Apart fromt the database there is some extra configuration available
+ - Apart from the database there is some extra configuration available
  - In config.json you can set the port which the node server will run on
  - You can configure relationships between models such as hasMany, belongsTo etc. see [here](https://docs.strongloop.com/display/public/LB/Creating+model+relations)
  
